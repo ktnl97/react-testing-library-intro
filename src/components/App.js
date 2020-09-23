@@ -41,8 +41,8 @@ class App extends React.Component {
       <div className="App">
         <h1>Tech Book Hub</h1>
         <label>Signed in as {this.state.name}</label>
-        <h4 role={"h4"}>Switching to digital should be easy, seamless and integrated.</h4>
-        <h4 role={"h4"}>We bring life to books for a tech adventure</h4>
+        <h4>Switching to digital should be easy, seamless and integrated.</h4>
+        <h4>We bring life to books for a tech adventure</h4>
         <p>List of books we offer you!</p>
           {
             this.state.books.map(book => <a href={book.website} key={book.title}>{book.title}</a>)
